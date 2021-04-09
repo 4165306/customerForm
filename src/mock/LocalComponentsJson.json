@@ -1,0 +1,275 @@
+[
+  {
+    "name": "HInput",
+    "field": "field100",
+    "icon": "edit",
+    "text": "单行文本框",
+    "config": {
+      "label": {
+        "name": "单行输入框",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请输入内容",
+      "type": "input"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HTextArea",
+    "field": "field101",
+    "icon": "form",
+    "text": "多行文本框",
+    "config": {
+      "label": {
+        "name": "多行输入框",
+        "size": 18,
+        "bold": true,
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请输入内容",
+      "type": "input"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HPassword",
+    "field": "field102",
+    "icon": "eye",
+    "text": "密码输入框",
+    "config": {
+      "label": {
+        "name": "密码输入框",
+        "size": 18,
+        "bold": true,
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请输入内容"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HSelect",
+    "field": "field103",
+    "icon": "ordered-list",
+    "text": "下拉选择框",
+    "config": {
+      "label": {
+        "name": "下拉选择框",
+        "size": 18,
+        "bold": true,
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "items": [
+        {
+          "value": "选项1"
+        }
+      ],
+      "remoteAdr": "/form/select/get",
+      "isRemote": false,
+      "isMultiple": false,
+      "placeholder": "请选择",
+      "type": "input"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HSelectRelation",
+    "field": "field103",
+    "icon": "ordered-list",
+    "text": "级联选择框",
+    "config": {
+      "label": {
+        "name": "级联选择框",
+        "size": 18,
+        "bold": true,
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "items": [
+      ],
+      "remoteAdr": "/form/select/get",
+      "isRemote": false,
+      "isMultiple": false,
+      "placeholder": "请选择",
+      "type": "input"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HNumberInput",
+    "field": "field104",
+    "icon": "number",
+    "text": "数字输入框",
+    "config": {
+      "label": {
+        "name": "数字输入框",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请输入内容",
+      "type": "input"
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HRadio",
+    "field": "field105",
+    "icon": "check-circle",
+    "text": "单选框",
+    "config": {
+      "label": {
+        "name": "单选框",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "",
+      "items": []
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HCheckbox",
+    "field": "field106",
+    "icon": "check-square",
+    "text": "多选框",
+    "config": {
+      "label": {
+        "name": "多选框",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "",
+      "items": []
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HDateSelect",
+    "field": "field107",
+    "icon": "schedule",
+    "text": "日期选择",
+    "config": {
+      "label": {
+        "name": "日期选择",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请选择日期",
+      "items": []
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HDateRange",
+    "field": "field108",
+    "icon": "schedule",
+    "text": "日期范围",
+    "config": {
+      "label": {
+        "name": "日期范围",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请选择日期",
+      "items": []
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请填写此内容",
+        "trigger": "blur"
+      }]
+    }
+  },
+  {
+    "name": "HTimeSelect",
+    "field": "field108",
+    "icon": "schedule",
+    "text": "时间选择",
+    "config": {
+      "label": {
+        "name": "时间选择",
+        "align": "right",
+        "width": 4,
+        "layout": "horizontal"
+      },
+      "placeholder": "请选择时间",
+      "items": []
+    },
+    "rulesConfig": {
+      "rules": [{
+        "required": true,
+        "message": "请选择此内容",
+        "trigger": "blur"
+      }]
+    }
+  }
+]

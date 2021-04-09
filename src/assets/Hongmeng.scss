@@ -1,0 +1,49 @@
+@for $i from 1 through 100 {
+  .h-margin-#{$i} {
+    margin: $i * 5px;
+  }
+  .h-padding-#{$i} {
+    padding: $i * 5px;
+  }
+  .h-font-#{$i} {
+    font-size: $i * 1px;
+  }
+  .h-flex-#{$i} {
+    flex: $i;
+  }
+  .h-height-#{$i} {
+    height: $i * 5px;
+  }
+  .h-width-#{$i} {
+    width: $i * 5px;
+  }
+  .h-border-radius-#{$i} {
+    border-radius: $i * 1px;
+  }
+
+  @each $direction in top,left,right,bottom {
+    .h-margin-#{$direction}-#{$i} {
+      margin-#{$direction}: $i * 5px
+    }
+    .h-padding-#{$direction}-#{$i} {
+      padding-#{$direction}: $i * 5px
+    }
+  }
+}
+
+@each $align in left, right, center {
+  .h-font-#{$align} {
+    text-align: $align;
+  }
+}
+
+.h-font-bold{
+  font-weight: bold;
+}
+.h-pos-abs {position: absolute}
+.h-pos-rel {position: relative}
+.full-height {height: 100%}
+.full-width {width: 100%}
+.hideScroll::-webkit-scrollbar {
+   width: 0 !important
+}
